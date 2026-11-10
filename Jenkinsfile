@@ -1,6 +1,9 @@
 // Declarative Pipeline
 pipeline{
-    agent any
+    agent
+        node{
+            label 'ROBOSHOP'
+        }
     stages{
         stage('Build'){
             steps{
