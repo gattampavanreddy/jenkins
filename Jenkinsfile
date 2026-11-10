@@ -27,4 +27,11 @@ pipeline{
             }
         }
     }
-} 
+
+    // POST BUILD
+    post{
+        always{
+            echo 'This will always run'
+        }
+    }
+}
